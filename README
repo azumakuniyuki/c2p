@@ -1,0 +1,37 @@
+$Id: README,v 1.1 2010/05/31 03:53:02 ak Exp $
+--------------------------------------------------------------------------------
+c2p is a converter which convert from character(string) to phonetic code.
+--------------------------------------------------------------------------------
+
+* HOW TO BUILD
+	- Default language is English
+	# make
+
+	- Default language is Japanese
+	# make LFLAGS=-DJP or Edit Makefile
+
+* INSTALL
+	# make install
+
+* UNINSTALL
+	# make uninstall
+
+* USAGE
+	> c2p -h
+	  Help message
+
+	> c2p -Lj 3.1415
+	  参,点,壱,四,壱,五
+
+	> c2p -Lj Himitsu
+	  エイチ(大),アイ,エム,アイ,ティー,エス,ユー
+
+	> c2p -Le Secret
+	  Sierra(LARGE),Echo,Charlie,Romeo,Echo,Tango
+
+	> c2p -Le -dw Password
+	  Papa(LARGE) Alfa Sierra Sierra Whiskey Oscar Romeo Delta
+
+	> echo 'String' | c2p
+	  Sierra(LARGE),Tango,Romeo,India,November,Golf
+
