@@ -1,4 +1,9 @@
 -----------------------------------------------------------------------
+1.1.6	2010-06-02
+	* Remove 2 options: -e and -j completely.
+	* Update help message.
+	* Add README.JA
+
 1.1.5	2010-05-31
 	* Initialize the pointer: **selected_language = NULL;
 	* Add language file: jp.h and en.h
