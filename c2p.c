@@ -70,7 +70,7 @@
 
 #define MAX_LENGTH	127
 #define MAX_STDIN	127
-#define C2P_OPTIONS	"Cd:ehjL:sv"
+#define C2P_OPTIONS	"Cd:hL:sv"
 
 /* Default language */
 #ifdef JA
@@ -83,7 +83,7 @@
 
 static const char *MY_PROGNAME[] = {"c2p"};	/* My name */
 /* static const char *MY_DESCRIPTION[] = {"Convert from character to phonetic code"}; */
-static const char *MY_VERSION[] = {"1.1.5"};	/* Version number */
+static const char *MY_VERSION[] = {"1.1.6"};	/* Version number */
 static const char CHAR_DELIMITER_C = ',';	/* Delimiter(,) Comma */
 static const char CHAR_DELIMITER_P = '|';	/* Delimiter(|) Pipe line */
 static const char CHAR_DELIMITER_W = ' ';	/* Delimiter( ) whitespace */
@@ -465,16 +465,19 @@ void putHelp(void)
 	puts("Options:");
 	puts("");
 	puts(" Delimiter:");
-	puts("  -dc   : Comma[,]");
-	puts("  -dh   : Hyphen[-]");
-	puts("  -dp   : Pipeline[|]");
-	puts("  -dw   : White space[ ]");
+	puts("  -d<x>  : c = Comma [,]");
+	puts("         : h = Hyphen [-]");
+	puts("         : p = Pipeline [|]");
+	puts("         : w = White space [ ]");
 	puts("");
-	puts("  -Lx   : x = e:English, j:Japanese");
-	puts("  -s    : Write a white space after each delimiter.");
-	puts("  -C    : Show control character.");
-	puts("  -h    : Help message(This screen).");
-	puts("  -v    : Show version number.");
+	puts(" Language:" );
+	puts("  -L<x>  : e = English");
+	puts("         : j = Japanese(UTF-8)");
+	puts("");
+	puts("  -s     : Writes a white space after each delimiter.");
+	puts("  -C     : Show control characters too.");
+	puts("  -h     : Shows help message(This screen).");
+	puts("  -v     : Shows version number.");
 }
 
 void putVersion(void)
