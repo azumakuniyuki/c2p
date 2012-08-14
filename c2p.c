@@ -83,7 +83,7 @@
 
 static const char *MY_PROGNAME[] = {"c2p"};	/* My name */
 /* static const char *MY_DESCRIPTION[] = {"Convert from character to phonetic code"}; */
-static const char *MY_VERSION[] = {"1.1.6"};	/* Version number */
+static const char *MY_VERSION[] = {"1.1.7"};	/* Version number */
 static const char CHAR_DELIMITER_C = ',';	/* Delimiter(,) Comma */
 static const char CHAR_DELIMITER_P = '|';	/* Delimiter(|) Pipe line */
 static const char CHAR_DELIMITER_W = ' ';	/* Delimiter( ) whitespace */
