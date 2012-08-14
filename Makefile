@@ -26,6 +26,7 @@ clean:
 
 install:
 	cp c2p $(PREFIX)/bin/
+	chmod a+x $(PREFIX)/bin/c2p
 
 uninstall:
 	rm -f $(PREFIX)/bin/c2p
